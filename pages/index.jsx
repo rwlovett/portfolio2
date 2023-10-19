@@ -1,26 +1,23 @@
 import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import FeedbackForm from "@components/FeedbackForm";
-import JokeBlock from "@components/JokeBlock";
+import Image from "next/image";
+import Header from "@components/Header.jsx";
+import Footer from "@components/Footer.jsx";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Toolbox</title>
+        <title>Ryan Lovett Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Next.js Toolbox2" />
+        <Header title="Ryan Lovett Portfolio" />
         <hr />
         <p className="description">
           Here's an example of a Netlify Form! When you fill this out, the
           submissions can be found in the Netlify Admin site.
         </p>
-        <FeedbackForm />
-        <JokeBlock />
       </main>
       <Footer />
     </div>
